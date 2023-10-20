@@ -1,5 +1,11 @@
 package com.ak.dao;
 
-public interface ProductDao {
+import java.util.List;
 
+import com.ak.entity.Product;
+
+public interface ProductDao {
+	String addProduct(Product p);
+	List<Product> getAllProducts();
 }
+
